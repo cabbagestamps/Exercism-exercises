@@ -37,9 +37,8 @@ function calcSpaceAge(event) {
 
   const newPlanetAge = (age / planetDeltas[planet]).toFixed(2)
   const upperCasePlanet = planet.slice(0, 1).toUpperCase() + planet.slice(1)
-  const stringReturn = `You would be ${newPlanetAge} years old on ${upperCasePlanet}.`
 
-  if (planet) {return ans.textContent = stringReturn}
+  return ans.textContent = `You would be ${newPlanetAge} years old on ${upperCasePlanet}.`
 
 }
 

@@ -14,16 +14,10 @@ let ans = document.getElementById('ans')
 
 function calcSpaceAge(event) {
   event.preventDefault()
+  
   const age = event.target.age.value
   const planet = event.target.planets.value
-  const mercuryDelta = 0.2408467
-  const venusDelta = 0.61519726 
-  const marsDelta = 1.8808158
-  const JupiterDelta = 11.862615
-  const saturnDelta = 29.447498
-  const uranusDelta = 84.016846
-  const neptuneDelta = 164.79132
-
+  
   const planetDeltas = {
     mercury: 0.2408467,
     venus: 0.61519726,

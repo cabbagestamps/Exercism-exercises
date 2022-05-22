@@ -37,43 +37,9 @@ function calcSpaceAge(event) {
 
   const newPlanetAge = (age / planetDeltas[planet]).toFixed(2)
   const upperCasePlanet = planet.slice(0, 1).toUpperCase() + planet.slice(1)
-  console.log(upperCasePlanet)
+  const stringReturn = `You would be ${newPlanetAge} years old on ${upperCasePlanet}.`
 
-  switch (planet) {
-    case 'earth': 
-      console.log(age);
-      ans.textContent = `You would be ${newPlanetAge} years old on ${upperCasePlanet}.`
-      break;
-    case 'mercury':
-      console.log(age / mercuryDelta)
-      ans.textContent = `You would be ${newPlanetAge} years old on ${upperCasePlanet}.`
-      break;
-    case 'venus':
-      console.log(age / venusDelta)
-      ans.textContent = `You would be ${newPlanetAge} years old on ${upperCasePlanet}.`
-      break;
-    case 'mars':
-      console.log(age / marsDelta)
-      ans.textContent = `You would be ${newPlanetAge} years old on ${upperCasePlanet}.`
-      break;
-    case 'jupiter':
-      console.log(age / JupiterDelta)
-      ans.textContent = `You would be ${newPlanetAge} years old on ${upperCasePlanet}.`
-      break;
-    case 'saturn':
-      console.log(age / saturnDelta)
-      ans.textContent = `You would be ${newPlanetAge} years old on ${upperCasePlanet}.`
-      break;
-    case 'uranus':
-      console.log(age / uranusDelta)
-      ans.textContent = `You would be ${newPlanetAge} years old on ${upperCasePlanet}.`
-      break;
-    case 'neptune': 
-      console.log(age / neptuneDelta)
-      ans.textContent = `You would be ${newPlanetAge} years old on ${upperCasePlanet}.`
-      break;
-    default: 
-      console.log('error')
-  }
+  if (planet) {return ans.textContent = stringReturn}
+
 }
 

@@ -1,7 +1,6 @@
-#form {
-  margin: 10px;
+* {
+  margin-left: 5px;
 }
-
 
 ul {
   list-style: none;
@@ -11,4 +10,8 @@ ul {
 
 li {
   margin: 10px 0 10px 0;;
+}
+
+p {
+  font-size: larger;
 }

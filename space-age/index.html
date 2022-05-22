@@ -14,7 +14,7 @@
     <ul>
       <li>
         <label for="age">Age:</label>
-        <input type="number" id='age' name='age'/> 
+        <input type="number" min="1" id='age' name='age' oninput="this.value = Math.abs(this.value)"/> 
       </li>
       <li>
         <label for="planets">Choose a planet:</label>
@@ -32,9 +32,7 @@
       <li>
         <input type="submit" value='submit' />
       </li>
-      
     </ul>
-    
   </form>
   <p id="ans"></p>
 </body>
